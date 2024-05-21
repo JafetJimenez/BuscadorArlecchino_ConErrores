@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buscador Arlecchino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <nav>
+            <ul class="nav-right-section">
+                <li><a href="https://genshin-impact.fandom.com/es/wiki/Arlecchino">Información</a></li>
+                <li><a href="https://www.hoyolab.com/article/27165235">Imágenes</a></li>
+                <li><a href="https://www.youtube.com/watch?v=tN5JACOEJFM">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube-filled" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" stroke-width="0" fill="currentColor" />
+                      </svg></a></li>
+        </nav>
+    </header>
+    <main>
+        <section class="main-input">
+            <div class="main-input-container">
+                <span class="pyro-icon"></span>
+                <input id="main-search" type="text" placeholder="Buscar en Teyvat el personaje">
+                <span class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 12l14 0" />
+                        <path d="M13 18l6 -6" />
+                        <path d="M13 6l6 6" />
+                      </svg>
+                </span>
+            </div>
+        </section>
+        <section class="main-buttons">
+            <div><button onclick="window.location.href='https://genshin-impact.fandom.com/es/wiki/Elementos#Pyro'">Buscar</button></div>
+            <div><button onclick="window.location.href='https://genshin.hoyoverse.com/es/character/mondstadt?char=0'">Explorar</button></div>
+        </section>
+    </main> 
+    <footer>
+        <nav class="footer">
+            <ul class="footer-left">
+            </footer>
+                <li><a href="https://genshin.hoyoverse.com/es/home">Más información</a></li>
+                <li><a href="https://genshin.hoyoverse.com/es/">Instalar juego</a></li>
+            </ul>
+            <ul class="footer-right">
+                <li><a>Privacidad</a></li>
+                <li><a>Condiciones</a></li>
+                <li><a>Preferencias</a></li>
+            </ul>
+        </nav>
+    <script>
+        var input = document.getElementById('main-search');
+        input.addEventListener('focus', function() {
+            this.placeholder = '';
+        });
+        input.addEventListener('blur', function() {
+            if (this.value == '') {
+                this.placeholder = 'Buscar en Teyvat el personaje';
+            }
+        });
+    </script>
+    </body>
+    </html>
